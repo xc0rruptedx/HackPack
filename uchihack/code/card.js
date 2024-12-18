@@ -135,7 +135,7 @@ function main() {
         var root = $("<div>").css("margin", "-20px auto 20px").css("width", "960px");
         var obj1 = $("<div>").css("position", "relative").css("border", "1px solid white").css("background", "#ffffff")
             .css("border-radius", "20px").css("padding", "0 8px 0 8px").css("width", "max-content")
-            .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить эту залупу | Навсякий, я не создатель. Я просто сделал мем версию UchiHack.")).on("click", function () {
+            .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить все хери | Я не создатель")).on("click", function () {
                 solve_all();
             }));
 
@@ -148,7 +148,7 @@ function main() {
         // Решить текущее задание
         var obj2 = $("<div>").css("position", "relative").css("border", "1px solid white").css("background", "#ffffff").css("left", "86%")
             .css("border-radius", "20px").css("top", "-50px").css("padding", "0 6px 0 8px").css("width", "max-content")
-            .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить эту залупу | Навсякий, я не создатель. Я просто сделал мем версию UchiHack.")).on("click", function () {
+            .append($("<a>").append($("<span>").css("cursor", "pointer").text("Решить только эту херь | Я не создатель")).on("click", function () {
                 solve_current();
                 reload_on_sent();
             }));
@@ -162,9 +162,9 @@ function main() {
     // ----------------------------------------------------------------------------------
     // Автоматическое решение
     if (sessionStorage.getItem('doSolve') === 'true' && sessionStorage.getItem('solverUrl') == location.href) {
-        l_info("Решаю херь дальше... Навсякий, я не создатель. Я просто сделал мем версию UchiHack.");
+        l_info("Решаю херь дальше... ");
         if (sessionStorage.getItem('solved') === 'true') {
-            l_info("Этот пиздец успешно решен! Навсякий, я не создатель. Я просто сделал мем версию UchiHack.");
+            l_info("Этот пиздец успешно решен!");
             sessionStorage.setItem('doSolve', 'false');
             sessionStorage.setItem('solved', 'false');
         } else if (Card.Player.__score.current === Card.Player.__score.total) {
@@ -190,11 +190,13 @@ function main() {
 
     UchiHack = {};
     UchiHack.type = "card";
-    UchiHack.version = "v2.4.0";
+    UchiHack.version = "v6.9";
 
     l_exinfo(`Версия ${UchiHack.version} (Сделано TheAirBlow)`);
     l_exinfo("Сначало было на Github Gists, потом перенесено на Github");
     l_exinfo("Ссылка: https://github.com/theairblow/hackpack/");
+    l_exinfo("forked from theairblow/hackpack/uchihack")
+    l_exinfo("renamed by xc0rruptedx (github)")
 
     main();
 })();
