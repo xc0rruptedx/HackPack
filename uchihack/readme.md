@@ -4,13 +4,13 @@
 * Игр
 
 Если хотите поддержать, то вот ссылка на [DonationAlerts](https://www.donationalerts.com/r/theairblow). \
-**Я не несу ответсвенность за возможные проблемы после использования этого скрипта.**
+**Я не несу ответсвенность за возможные проблемы после использования этого скрипта. Я не создатель скрипта**
 
 ## ❓ Как использовать
 ### DevTools (код элемента)
 1) ПКМ -> Код элемента или Shift + F7
 2) Откройте консоль (кнопка сверху)
-3) Вставьте код из [этого](https://github.com/theairblow/hackpack/blob/main/uchihack/misc/devtools.js) файла
+3) Вставьте код из [этого](https://github.com/xc0rruptedx/hackpack/blob/main/uchihack/misc/devtools.js) файла
 
 ### Tampermonkey
 Это в случае если у вас браузер Chrome, Yandex, Opera... \
